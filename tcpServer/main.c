@@ -39,7 +39,7 @@ void main()
 
 	// Tell Winsock the socket is for listening 
 	listen(listening, SOMAXCONN);
-	printf("Waitinf for clinet to connect......\n");
+	printf("Waiting for clinet to connect......\n");
 	// Wait for a connection
 	SOCKADDR_IN client;
 	int clientSize = sizeof(client);
@@ -93,9 +93,9 @@ void main()
 		printf("\n");
 
 		 printf("\n======[RSD Chuck ACK and NACK Test Menu:]=====\n");
-         printf("| 1. Echo message back to client                \n");
-         printf("| 2. Send test message to DUT                    \n");
-         printf("| 3. Exit?                                      \n");
+         printf("| 1. Echo message back to client                  \n");
+         printf("| 2. Send test message to DUT                     \n");
+         printf("| 3. Exit?                                        \n");
          printf("================================================\n");
          int iResult;
          (void)scanf("%d", &ms);
